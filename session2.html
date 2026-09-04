@@ -1,0 +1,172 @@
+<!-- 3 types of list: ul ol il 
+ <u/o l>
+   <li> Item1</li>
+   <li>Item2</li>
+ </u/l l>
+ ol ordered list (it shows number 1... 2...)
+ ul unordered list (it doesnt show number)
+ dl description list (not used a lot)
+
+
+
+ TABLES 
+The important tags are:
+
+<table> = creates the table
+<tr> = table row
+<th> = table heading
+<td> = table data/cell
+exemple:
+<table>
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>tat</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>ingrid</td>
+            <td>21</td>
+        </tr>
+    </tbody>
+
+</table>
+FORM
+A form in HTML is used to collect information from the user.
+For example:
+
+name
+email
+password
+phone number
+comments
+login information
+
+
+<form action="/login" method="post">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email">
+    ...
+    <button type="submit">Log In</button>
+</form>
+EXPLICATION:
+<form> starts the form.
+action="/login" means:
+when the user submits the form, send the information to /login
+So /login is usually the page or backend route that checks the login information.
+method="post" means:
+send the data using the POST method
+For login forms, POST is normally used because the information is being sent to the server.
+Then:
+<label for="email">Email</label>
+This displays:
+Email
+The:
+for="email"
+connects the label to this input:
+id="email"
+Then:
+<input id="email" name="email" type="email">
+This creates the email box.
+id="email" = identifies the input on the page
+name="email" = the name used when sending the data
+type="email" = tells the browser that an email address is expected
+So if the user types:
+georges@gmail.com
+the form sends something like:
+email = georges@gmail.com
+Then:
+<button type="submit">Log In</button>
+This creates the Log In button.
+type="submit" means:
+when clicked, submit the form
+So the whole process is:
+User enters email
+        ↓
+Clicks "Log In"
+        ↓
+Form collects the data
+        ↓
+POST sends it to /login
+        ↓
+Server checks the login
+
+<textarea> is used when you want the user to type a longer amount of text.
+<label for="message">Message</label>
+<textarea id="message" name="message"></textarea>
+
+
+
+
+IMAGE AND VIDEO
+<img src="...">
+<video "" controls>
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>session 2</title>
+</head>
+
+<body>
+    <h1>Types of list</h1>
+
+    <ol>
+        <li>Apple</li>
+        <li>Pineapple</li>
+        <li>Berries</li>
+    </ol>
+
+    <ul>
+        <li>Apple</li>
+        <li>Pineapple</li>
+        <li>Berries</li>
+    </ul>
+
+    <dl>
+        <dt>HTML</dt> <!-- Description term -->
+        <dd>Used to structure a web page.</dd> <!-- Description -->
+
+        <dt>CSS</dt>
+        <dd>Used to style a web page.</dd>
+    </dl>
+
+</body>
+
+<!-- TABLES-->
+ <h1>Tables</h1>
+<table>
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>tat</td>
+            <td>20</td>
+            <td>leb</td> <!-- sa lajoute sans titre de colonne-->
+        </tr>
+
+        <tr>
+            <td>ingrid</td>
+            <td>21</td>
+        </tr>
+    </tbody>
+
+</table>
+
+
+<h1>Form</h1>
+</html>
