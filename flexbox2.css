@@ -1,0 +1,24 @@
+
+.card {
+    background-color:aqua;
+    border-color:black;
+    border-width:5px;
+    border-style:solid;
+    width:300px;
+    
+}
+p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info{
+    flex:1;
+    min-width:0;
+}
+
+.container{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}

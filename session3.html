@@ -1,0 +1,55 @@
+<!-- 
+ dans un file apart on lappele style.css car dans le code on lutilise
+h1 ~ p {
+    color : red;
+    text-align: center;
+    font-size:50px;
+    } 
+ex:
+h1 {
+    color :red;
+    text-align: center;
+    font-size: 50px;
+    }
+
+.title {
+    color: blue; 
+    }
+
+ h1{
+    color: green;
+    }
+
+dans ce cas sa va bayyin blue car cest plus "fort"
+
+
+h1 ~ p: later <p> sibling of an <h1>
+h1 + p: the first <p> immediatly after an <h1> 
+css will always use the last one.
+
+
+
+borders and co dans le cour;
+absolute vs reative units (fixed pixels(ex: width: 320 px) vs relative units(avc % ex: width: 80%));
+
+three ways to add css (external is the best way)
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="card">
+            <h1 class="title" id="title">this is a card </h1>
+            <p class="title"> this is anthr prg</p>
+        </div>
+        <h1 class="title" id="title">this is a card </h1>
+        <p class="title"> this is another paragraph</p>
+    </body>
+</html>
